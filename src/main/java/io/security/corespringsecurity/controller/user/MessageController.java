@@ -2,6 +2,7 @@ package io.security.corespringsecurity.controller.user;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * Created by P-161 at : 2022-09-07
@@ -19,4 +20,11 @@ public class MessageController {
     public String mypage(){
         return "/user/messages";
     }
+
+    @ResponseBody
+    @GetMapping("/api/messages")
+    public String apiMessage(){
+        return "messages ok";
+    }
+
 }

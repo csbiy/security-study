@@ -41,7 +41,11 @@ public class Account {
 
     private String role;
 
-
-
-
+    public Account(String username, String password, String email, String age, String role) {
+        this.username = username;
+        this.password = password;
+        this.email = email;
+        this.age = age;
+        this.role = role;
+    }
 }
